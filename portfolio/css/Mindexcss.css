@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* main,section,article,div,span,ul,li,h2{border: 1px solid red;} */
+
+body{min-width: 320px;}
+
+main{
+    width: 100%;
+    height:800px;
+}
+main .inner{
+    padding: 300px 20px;
+}
+main h1{ 
+    font-size: 3rem;
+}
+.sec1 .inner .slidebox .conbox .photo{
+    width:  90%;
+    height: 45%;
+    background: url(../images/index_img/A_mmain.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sec1 .inner .slidebox .conbox.no2 .photo{
+    width:  90%;
+    height: 45%;
+    background: url(../images/index_img/B_mmain.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sec1 {
+    height:1600px;
+    padding-top: 800px;
+}
+.sec1 .inner{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.sec1::before{
+    top: 800px;
+    background-image: none;
+}
+.sec1 .inner .slidebox .conbox .copy::before{
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    content: '';
+    transform: rotate(15deg);
+    border: 1px solid rgb(128, 128, 128);
+}
+.sec2 {
+    height: 1100px;
+}
+.sec2 .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sec2 .inner .box1{
+    width: 100%;
+    height: 60%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec2 .inner .box2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2 .inner .box1 p{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
